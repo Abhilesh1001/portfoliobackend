@@ -115,7 +115,8 @@ USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    
+    "https://abhileshportfolio.vercel.app"
+
 ]
 
 # Default primary key field type
@@ -132,3 +133,4 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'abhileshmovies@gmail.com'
 EMAIL_HOST_PASSWORD = 'pbtt omms cdnk pwso'
+CONTACT_EMAIL ='abhileshkumar925@gmail.com'

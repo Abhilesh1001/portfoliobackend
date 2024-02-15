@@ -7,5 +7,6 @@ urlpatterns = [
     path('', views.index),
     path('project/', views.ProjcetView.as_view()),
     path('project/<int:pk>/', views.ProjcetView.as_view()),
+    path('message/', views.MessageView.as_view()),
 ]
 

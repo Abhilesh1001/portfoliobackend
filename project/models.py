@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.timezone import now 
 
 # Create your models here.
 
@@ -13,5 +14,12 @@ class Project(models.Model):
     backendLink = models.CharField(max_length=1000)
     frontendLink = models.CharField(max_length=1000)
 
+class Message(models.Model):
+    message_id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=10000)
+    email = models.EmailField(max_length=500)
+    message = models.TextField()
+    time = models.DateTimeField(default = now)
+        
 
     
